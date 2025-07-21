@@ -70,7 +70,7 @@ function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-1">
-            <a
+           {/*} <a
                 href="#about"
                 className={`flex items-center space-x-2 px-4 py-2 rounded-full transition-all duration-300 font-medium ${
                     activeSection === 'about'
@@ -79,7 +79,7 @@ function Header() {
                 }`}
                 >
                 <span>About</span>
-            </a>
+            </a>*/}
 
             <a
                 href="#streams"
@@ -89,7 +89,7 @@ function Header() {
                     : 'text-gray-600 hover:text-blue-600 hover:bg-blue-50'
                 }`}
                 >
-                <span>Streams</span>
+                <span>Home</span>
             </a>
 
             <a

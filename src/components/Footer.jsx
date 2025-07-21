@@ -9,7 +9,7 @@ function Footer() {
           <div className="grid md:grid-cols-4 gap-8">
             <div>
               <div className="flex items-center space-x-3 mb-4">
-                <div className="bg-gradient-to-r from-blue-600 to-purple-600 p-2 rounded-lg">
+                <div className="bg-blue-500 p-2 rounded-lg">
                   <BookOpen className="w-6 h-6 text-white" />
                 </div>
                 <h4 className="text-xl font-bold">StreamChoice</h4>

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { ChevronDown, ChevronUp, Star, ArrowRight, BookOpen, Calculator, Microscope, TrendingUp, Users, Award } from 'lucide-react';
+import { ChevronDown, ChevronUp, Star, ArrowRight, BookOpen, Calculator, Microscope, TrendingUp, Users, Award, ArrowDown } from 'lucide-react';
+import { BentoGridDemo } from './BentoGrid';
 
 const LandingPage = () => {
   const [openFAQ, setOpenFAQ] = useState(null);
@@ -111,17 +112,17 @@ const LandingPage = () => {
               
               <div className="space-y-4">
                 <div className="bg-white rounded-lg p-4 shadow-sm">
-                  <h5 className="font-semibold text-gray-800 mb-2">Core Subjects</h5>
-                  <div className="text-sm text-gray-600">Physics • Chemistry • Biology/Mathematics</div>
+                  <h5 className="font-semibold text-green-800 mb-2 text-center">Core Subjects</h5>
+                  <div className="text-sm text-gray-600 text-center">Physics • Chemistry • Biology/Mathematics</div>
                 </div>
                 
                 <div className="flex justify-center">
-                  <ArrowRight className="w-6 h-6 text-gray-400" />
+                  <ArrowDown className="w-6 h-6 text-gray-400" />
                 </div>
                 
                 <div className="bg-white rounded-lg p-4 shadow-sm">
-                  <h5 className="font-semibold text-gray-800 mb-2">Career Paths</h5>
-                  <div className="grid grid-cols-2 gap-2 text-sm text-gray-600">
+                  <h5 className="font-semibold text-green-800 mb-2 text-center">Career Paths</h5>
+                  <div className="grid grid-cols-2 gap-2 text-sm ml-30 text-gray-600">
                     <div>• Doctor</div>
                     <div>• Engineer</div>
                     <div>• Researcher</div>
@@ -132,12 +133,12 @@ const LandingPage = () => {
                 </div>
                 
                 <div className="flex justify-center">
-                  <ArrowRight className="w-6 h-6 text-gray-400" />
+                  <ArrowDown className="w-6 h-6 text-gray-400" />
                 </div>
                 
                 <div className="bg-white rounded-lg p-4 shadow-sm">
-                  <h5 className="font-semibold text-gray-800 mb-2">Best For Students Who</h5>
-                  <div className="text-sm text-gray-600">
+                  <h5 className="font-semibold text-green-800 mb-2 text-center">Best For Students Who</h5>
+                  <div className="text-sm ml-35 text-gray-600">
                     • Love experiments and discovery<br/>
                     • Are good at logical reasoning<br/>
                     • Enjoy mathematics and problem-solving
@@ -158,17 +159,17 @@ const LandingPage = () => {
               
               <div className="space-y-4">
                 <div className="bg-white rounded-lg p-4 shadow-sm">
-                  <h5 className="font-semibold text-gray-800 mb-2">Core Subjects</h5>
-                  <div className="text-sm text-gray-600">Accountancy • Business Studies • Economics</div>
+                  <h5 className="font-semibold text-orange-800 mb-2 text-center">Core Subjects</h5>
+                  <div className="text-sm text-gray-600 text-center">Accountancy • Business Studies • Economics</div>
                 </div>
                 
                 <div className="flex justify-center">
-                  <ArrowRight className="w-6 h-6 text-gray-400" />
+                  <ArrowDown className="w-6 h-6 text-gray-400" />
                 </div>
                 
                 <div className="bg-white rounded-lg p-4 shadow-sm">
-                  <h5 className="font-semibold text-gray-800 mb-2">Career Paths</h5>
-                  <div className="grid grid-cols-2 gap-2 text-sm text-gray-600">
+                  <h5 className="font-semibold text-orange-800 mb-2 text-center">Career Paths</h5>
+                  <div className="grid grid-cols-2 gap-2 ml-25 text-sm text-gray-600">
                     <div>• Chartered Accountant</div>
                     <div>• Business Analyst</div>
                     <div>• Entrepreneur</div>
@@ -179,12 +180,12 @@ const LandingPage = () => {
                 </div>
                 
                 <div className="flex justify-center">
-                  <ArrowRight className="w-6 h-6 text-gray-400" />
+                  <ArrowDown className="w-6 h-6 text-gray-400" />
                 </div>
                 
                 <div className="bg-white rounded-lg p-4 shadow-sm">
-                  <h5 className="font-semibold text-gray-800 mb-2">Best For Students Who</h5>
-                  <div className="text-sm text-gray-600">
+                  <h5 className="font-semibold text-orange-800 mb-2 text-center">Best For Students Who</h5>
+                  <div className="text-sm text-gray-600 ml-35">
                     • Have strong communication skills<br/>
                     • Understand money and business<br/>
                     • Are interested in current affairs
@@ -196,6 +197,9 @@ const LandingPage = () => {
         </div>
       </section>
 
+<div>
+  <BentoGridDemo/>
+</div>
       {/* FAQ Section */}
       <section id="faq" className="py-16 px-4">
         <div className="max-w-4xl mx-auto">
