@@ -59,26 +59,7 @@ const LandingPage = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50">
-      {/* Header */}
-      <header className="bg-white shadow-lg">
-        <div className="max-w-7xl mx-auto px-4 py-6">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-3">
-              <div className="bg-gradient-to-r from-blue-600 to-purple-600 p-2 rounded-lg">
-                <BookOpen className="w-8 h-8 text-white" />
-              </div>
-              <h1 className="text-2xl font-bold text-gray-800">StreamChoice</h1>
-            </div>
-            <nav className="hidden md:flex space-x-8">
-              <a href="#about" className="text-gray-600 hover:text-blue-600 transition-colors">About</a>
-              <a href="#streams" className="text-gray-600 hover:text-blue-600 transition-colors">Streams</a>
-              <a href="#faq" className="text-gray-600 hover:text-blue-600 transition-colors">FAQ</a>
-              <a href="#reviews" className="text-gray-600 hover:text-blue-600 transition-colors">Reviews</a>
-            </nav>
-          </div>
-        </div>
-      </header>
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 mt-20">
 
       {/* Hero Section */}
       <section className="py-20 px-4">
@@ -88,7 +69,7 @@ const LandingPage = () => {
             <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"> Stream</span>
           </h2>
           <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-            Discover whether Science or Commerce is the right path for you! Our intelligent quiz analyzes your interests, 
+            Discover whether Science or Commerce is the right path for you! <br />Our intelligent quiz analyzes your interests, 
             aptitude, and career goals to guide your academic journey.
           </p>
           <button className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center mx-auto space-x-2">
@@ -287,49 +268,7 @@ const LandingPage = () => {
           <p className="text-blue-100 mt-4 text-sm">Free • No Registration Required • Instant Results</p>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="bg-gray-800 text-white py-12 px-4">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-4 gap-8">
-            <div>
-              <div className="flex items-center space-x-3 mb-4">
-                <div className="bg-gradient-to-r from-blue-600 to-purple-600 p-2 rounded-lg">
-                  <BookOpen className="w-6 h-6 text-white" />
-                </div>
-                <h4 className="text-xl font-bold">StreamChoice</h4>
-              </div>
-              <p className="text-gray-400">Helping students make informed decisions about their academic future.</p>
-            </div>
-            <div>
-              <h5 className="font-semibold mb-4">Quick Links</h5>
-              <ul className="space-y-2 text-gray-400">
-                <li><a href="#about" className="hover:text-white transition-colors">About Us</a></li>
-                <li><a href="#streams" className="hover:text-white transition-colors">Stream Guide</a></li>
-                <li><a href="#faq" className="hover:text-white transition-colors">FAQ</a></li>
-              </ul>
-            </div>
-            <div>
-              <h5 className="font-semibold mb-4">Resources</h5>
-              <ul className="space-y-2 text-gray-400">
-                <li><a href="#" className="hover:text-white transition-colors">Career Guide</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Study Tips</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">College Info</a></li>
-              </ul>
-            </div>
-            <div>
-              <h5 className="font-semibold mb-4">Contact</h5>
-              <div className="text-gray-400 space-y-2">
-                <p>Email: help@streamchoice.in</p>
-                <p>Phone: +91 98765 43210</p>
-              </div>
-            </div>
-          </div>
-          <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2025 StreamChoice. All rights reserved.</p>
-          </div>
-        </div>
-      </footer>
+      
     </div>
   );
 };
