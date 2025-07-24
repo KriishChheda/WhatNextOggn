@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { ArrowRight, BookOpen, Menu, X, Sparkles } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 function Header() {
+   const navigate = useNavigate();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState('');
@@ -70,19 +73,8 @@ function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-1">
-           {/*} <a
-                href="#about"
-                className={`flex items-center space-x-2 px-4 py-2 rounded-full transition-all duration-300 font-medium ${
-                    activeSection === 'about'
-                    ? 'bg-blue-500 text-white shadow-lg transform scale-105'
-                    : 'text-gray-600 hover:text-blue-600 hover:bg-blue-50'
-                }`}
-                >
-                <span>About</span>
-            </a>*/}
-
             <a
-                href="#streams"
+                href="/"
                 className={`flex items-center space-x-2 px-4 py-2 rounded-full transition-all duration-300 font-medium ${
                     activeSection === 'streams'
                     ? 'bg-blue-500 text-white shadow-lg transform scale-105'
@@ -114,7 +106,7 @@ function Header() {
                 <span>Reviews</span>
             </a>
 
-            <button className="ml-4 bg-blue-500 text-white px-6 py-2 rounded-full hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center space-x-2 font-semibold">
+            <button className="ml-4 bg-blue-500 text-white px-6 py-2 rounded-full hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center space-x-2 font-semibold" onClick={()=>navigate('/test')}>
               <span>Take Quiz</span>
               <ArrowRight className="w-4 h-4" />
             </button>
@@ -186,7 +178,7 @@ function Header() {
             </a>
 
             {/* Mobile CTA Button */}
-            <button className="w-full mt-4 bg-blue-500 text-white px-6 py-3 rounded-xl hover:shadow-xl transition-all duration-300 flex items-center justify-center space-x-2 font-semibold">
+            <button className="w-full mt-4 bg-blue-500 text-white px-6 py-3 rounded-xl hover:shadow-xl transition-all duration-300 flex items-center justify-center space-x-2 font-semibold" onClick={() => navigate('/test')}>
             <span>Take Quiz Now</span>
             <ArrowRight className="w-5 h-5" />
             </button>

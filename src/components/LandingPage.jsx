@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+
 import { ChevronDown, ChevronUp, Star, ArrowRight, BookOpen, Calculator, Microscope, TrendingUp, Users, Award, ArrowDown } from 'lucide-react';
 import { BentoGridDemo } from './BentoGrid';
 
 const LandingPage = () => {
+  const navigate = useNavigate();
   const [openFAQ, setOpenFAQ] = useState(null);
 
   const toggleFAQ = (index) => {
@@ -73,7 +76,7 @@ const LandingPage = () => {
             Discover whether Science or Commerce is the right path for you! <br />Our intelligent quiz analyzes your interests, 
             aptitude, and career goals to guide your academic journey.
           </p>
-          <button className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center mx-auto space-x-2">
+          <button className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center mx-auto space-x-2" onClick={()=>navigate('/test')}>
             <span>Take Quiz Now</span>
             <ArrowRight className="w-5 h-5" />
           </button>
@@ -265,7 +268,7 @@ const LandingPage = () => {
           <p className="text-xl text-blue-100 mb-8">
             Take our comprehensive quiz and get personalized recommendations for your academic future.
           </p>
-          <button className="bg-white text-blue-600 px-8 py-4 rounded-full text-lg font-semibold hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center mx-auto space-x-2">
+          <button className="bg-white text-blue-600 px-8 py-4 rounded-full text-lg font-semibold hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center mx-auto space-x-2" onClick={()=>navigate('/test')}>
             <span>Start Your Journey</span>
             <ArrowRight className="w-5 h-5" />
           </button>
