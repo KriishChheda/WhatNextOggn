@@ -487,7 +487,7 @@ const AptitudeTest = () => {
   if (showResult) {
     const results = calculateResults();
     return (
-      <div className="max-w-4xl mx-auto p-6 bg-white rounded-lg shadow-lg mt-16">
+      <div className="max-w-4xl mx-auto p-6 bg-white rounded-lg shadow-lg mt-30 mb-30">
        <button
             onClick={() => navigate('/')}
             className="mt-6 inline-flex items-center space-x-2 bg-blue-500 hover:bg-blue-600 text-white font-semibold px-6 py-3 rounded-full shadow-md hover:shadow-lg transition duration-300"
@@ -590,7 +590,7 @@ const AptitudeTest = () => {
   const answeredCount = Object.keys(answers).length;
 
   return (
-    <div className="max-w-5xl mx-auto p-6 bg-white rounded-lg shadow-lg">
+    <div className="max-w-5xl mx-auto p-6 bg-white rounded-lg shadow-lg mt-10 mb-10">
       {/* Header */}
       <div className="mb-6">
         <div className="flex justify-between items-center mb-4 mt-20">
