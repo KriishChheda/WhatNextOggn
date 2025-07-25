@@ -14,26 +14,42 @@ const LandingPage = () => {
 
   const faqs = [
     {
-      question: "When should I decide between Science and Commerce?",
-      answer: "The ideal time is during 9th or early 10th standard. This gives you enough time to understand your interests and plan accordingly for your future career path."
+      question: "What Course/Stream shall I choose if I wish to appear for IAS/IPS/UPSC/Civil Service Examination?",
+      answer: "Any candidate with minimum 21 years of age and having completed graduation from ANY STREAM can appear for the Exam. Traditionally, students preferred B.A as graduation because they get the time for preparation. One of the issues students found after B.Sc, B.E, Medicine, Engineering or Commerce is cracking the exam. One important selection criterion is 50% in your 10th, 12th & graduation. There is no minimum or maximum percentage barrier. The exam is open to students of 21 years from all streams. It is the process that matters. This takes place over three years, and one has to clear the Prelims, Mains & Interview. During this period one can take jobs, higher education, or prepare full-time. After selection, training takes 2 years. Ultimately, the end candidate is like a public servant with a national degree in hand and can pursue professions in parallel."
     },
     {
-      question: "Can I switch streams after 10th standard?",
-      answer: "While it's possible, it's better to make an informed choice initially. Some career paths may require specific stream backgrounds, so early planning is beneficial."
+      question: "What are the pre-requisites of Architecture?",
+      answer: "Students who are good in creativity and technical subjects (Physics, Chemistry & Maths) are the right candidates to pursue Architecture. One needs to pursue Science-A Group after 10th to appear for competitive exams for Architecture like NATA, JEE-MAIN (B-ARCH)."
     },
     {
-      question: "What if I'm interested in both Science and Commerce?",
-      answer: "That's great! Some careers like Business Analytics, Biotechnology Business, or Science Communication combine both fields. Our quiz will help identify your stronger inclination."
+      question: "How can I get into Teaching Profession?",
+      answer: "If you are passionate about any one subject or group of similar subjects, you can pursue higher education in the specific subject field and teaching. Teaching can be Master Degree bridge with B.Ed. oriented Teaching schools for college teaching. College Teaching, Higher Education like Masters/Doctorate Degree is required. One should possess the following qualities:\ni. The ability to develop relationships with their students\nii. Patience, caring, and kind personality\niii. Knowledge of learners\niv. Dedication to teaching\nv. Capability of engaging students in learning"
     },
     {
-      question: "How accurate is this quiz?",
-      answer: "Our quiz is designed by education experts and considers your interests, aptitude, and career goals. While it's a great starting point, we recommend discussing results with teachers and parents."
+      question: "Where can I pursue degree in Interior Design/ Fashion Design?",
+      answer: "In India, there is scope for those who are of interior or fashion design alone. One has to pursue a degree in Design and take electives or specialization within the scope of interior/fashion design, as per one’s dream. Apart from this, there are private schools which give diploma/certification programmes, which teach design which include formations, whether a part-time short-term plan along with graduation or as a full-time degree after 12th. Also, there are Master level Programs available."
     },
     {
-      question: "Do I need to create an account to take the quiz?",
-      answer: "No! Our quiz is completely free and doesn't require any registration. Just click 'Take Quiz' and start exploring your potential."
+      question: "How can I become an Ethical Hacker / Pursue Degree in Hacking or Cyber Security?",
+      answer: "In India, there is scope to specialize in the field of Hacking/ Cyber Security & Ethical Hacking. One has to pursue a degree in Computer Application or Engineering and may take degree or certificate of Hacking/ Cyber Security offered by different institutions. With the growing threat of information theft, ethical hackers are presently in demand. Apart from this, one can pursue such programs as a specialization or course offered in one semester of Engineering/ Cyber Security Degree, or after completing graduation after 12th. Also, there are Master level Programs to scale up skills."
+    },
+    {
+      question: "How can I become a Game Designer/ Application Designer?",
+      answer: "In India, there is scope to pursue the field of Gaming Design/ Application Design. One has to ideally pursue a degree in Computer Application and then pursue Game Design/ Application Design. With the rise of Game Design/ Application Design/ Interface Design/ Web Design, students who are tech-enthusiastic can pursue one’s dream. Apart from this, one can pursue certification programmes in various fields of Game Design/ Application Design/ Interface Design offered after 12th. Also, there are Master level Design Programs available in India."
+    },
+    {
+      question: "Where can I study Event Management?",
+      answer: "In India, there is scope to take a professional degree in Event Management. One has to pursue a degree in Business Management and take up studies in Event Management or can pursue BBA where one is studying this as a part of their undergraduate program in some universities. Apart from this, there are diploma/certificate courses in Event Management one can pursue along with any graduation in different fields."
+    },
+    {
+      question: "How can I become an Air-Hostess/Steward?",
+      answer: "Any candidate who has passed 12th with English as a compulsory subject and has good command on language can join this career. A few airlines give on-the-job training. But majority of companies require prior training for this. There are training institutes that give training and open up the selection process for pitching presentation skills.\ni. Pleasing Personality\nii. Good Communication Skills\niii. Pleasant Voice\niv. Friendly Nature\nv. Good Appearance"
+    },
+    {
+      question: "How can I become a Pilot?",
+      answer: "Any student with Physics and Mathematics in grade 12 (basically Science-A Group) can attain a Pilot Licence. The three stages are Student Pilot Licence followed by Private Pilot Licence and finally getting Commercial Pilot Licence from any flying school approved by DGCA India. One can apply for this to clear written and required Pilot Hours along with passing tests as prescribed by DGCA before candidate can be independently flying aircraft.\nAlso one can join Indian Air Force and become a pilot where all your training needs are taken care by them. You need to serve in the Air Force for stipulated time with a bond."
     }
-  ];
+  ]
 
   const reviews = [
     {
