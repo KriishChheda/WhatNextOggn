@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { ArrowRight, BookOpen, Menu, X, Sparkles } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 function Header() {
    const navigate = useNavigate();
@@ -54,6 +55,25 @@ function Header() {
         ? 'bg-white/95 backdrop-blur-md shadow-xl border-b border-gray-200' 
         : 'bg-white shadow-lg'
     }`}>
+      <Helmet>
+        <title>StreamChoice | Your Future Starts Here</title>
+        <meta name="description" content="Explore academic streams, get guidance, and take our aptitude test to discover your ideal career path. All with StreamChoice." />
+        <meta name="keywords" content="StreamChoice, Stream Selection, Career Test, Aptitude Quiz, Education Guide, Student Help, Academic Counseling" />
+        <meta name="author" content="Kriish Chheda" />
+
+        {/* Open Graph (for social media sharing) */}
+        <meta property="og:title" content="StreamChoice | Your Future Starts Here" />
+        <meta property="og:description" content="Make informed academic decisions with StreamChoice. Discover your strengths, explore career streams, and take our free quiz." />
+        <meta property="og:url" content="https://yourdomain.com" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://yourdomain.com/assets/streamchoice-home.jpg" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="StreamChoice | Your Future Starts Here" />
+        <meta name="twitter:description" content="Take the quiz and get personalized academic stream recommendations." />
+        <meta name="twitter:image" content="https://yourdomain.com/assets/streamchoice-home.jpg" />
+      </Helmet>
       <div className="max-w-7xl mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-3 cursor-pointer group" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>

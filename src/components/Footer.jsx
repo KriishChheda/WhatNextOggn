@@ -1,9 +1,29 @@
 import React from 'react'
 import {BookOpen} from 'lucide-react';
+import { Helmet } from 'react-helmet';
 
 function Footer() {
   return (
     <div>
+      <Helmet>
+        <meta name="footer-component" content="StreamChoice site footer with contact info, links, and resources." />
+        <mata author="Kriish Chheda"/>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "StreamChoice",
+            "url": "https://yourdomain.com",
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "email": "info@yourdomain.com",
+              "telephone": "+91-1234567890",
+              "contactType": "Customer Support"
+            }
+          })}
+        </script>
+      </Helmet>
+
       <footer className="bg-gray-800 text-white py-12 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-4 gap-8">

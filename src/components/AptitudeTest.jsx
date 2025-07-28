@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { ChevronRight, ChevronLeft, BookOpen, Calculator, Beaker, TrendingUp, Award, RefreshCw } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
+
 
 const AptitudeTest = () => {
   const navigate = useNavigate();
@@ -591,6 +593,25 @@ const AptitudeTest = () => {
 
   return (
     <div className="max-w-5xl mx-auto p-6 bg-white rounded-lg shadow-lg mt-10 mb-10">
+      <Helmet>
+        <title>StreamChoice | Aptitude Test</title>
+        <meta name="description" content="Take our free Aptitude Test to discover which academic stream fits you best. Personalized insights to help you make informed career decisions." />
+        <meta name="keywords" content="Aptitude Test, Stream Selector, Career Test, StreamChoice, Education, Stream Guide, Student Aptitude" />
+        <meta name="author" content="Kriish Chheda" />
+
+        {/* Open Graph */}
+        <meta property="og:title" content="StreamChoice | Aptitude Test" />
+        <meta property="og:description" content="Discover the right academic path for you with our free Aptitude Test. Trusted by students and educators." />
+        <meta property="og:url" content="https://yourdomain.com/aptitude-test" />
+        <meta property="og:image" content="https://yourdomain.com/assets/aptitude-banner.jpg" />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="StreamChoice | Aptitude Test" />
+        <meta name="twitter:description" content="Take our free Aptitude Test and find out which academic stream suits you best." />
+        <meta name="twitter:image" content="https://yourdomain.com/assets/aptitude-banner.jpg" />
+      </Helmet>
       {/* Header */}
       <div className="mb-6">
         <div className="flex justify-between items-center mb-4 mt-20">

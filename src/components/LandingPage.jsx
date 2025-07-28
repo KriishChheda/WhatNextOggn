@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
+import { Helmet } from 'react-helmet';
 import { ChevronDown, ChevronUp, Star, ArrowRight, BookOpen, Calculator, Microscope, TrendingUp, Users, Award, ArrowDown } from 'lucide-react';
 import { BentoGridDemo } from './BentoGrid';
 
@@ -80,6 +81,25 @@ const LandingPage = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 mt-20">
+      <Helmet>
+        <title>Career Stream Quiz | Discover Your Ideal Path</title>
+        <meta name="description" content="Confused between Science and Commerce? Take our intelligent quiz to get personalized stream recommendations and career guidance." />
+        <meta name="keywords" content="career quiz, science vs commerce, student career guidance, stream selection, education quiz, 10th standard, 9th standard, UPSC, civil services, teaching, hacking, pilot" />
+        <meta name="author" content="Meghana Basrur" />
+        
+        {/* Open Graph (Facebook, LinkedIn) */}
+        <meta property="og:title" content="Career Stream Quiz | Discover Your Ideal Path" />
+        <meta property="og:description" content="Discover whether Science or Commerce suits you best! Get personalized academic guidance instantly." />
+        <meta property="og:image" content="https://yourdomain.com/preview-image.jpg" />
+        <meta property="og:url" content="https://yourdomain.com" />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Career Stream Quiz | Discover Your Ideal Path" />
+        <meta name="twitter:description" content="Confused about which stream to choose after 10th? Take this quiz and make the right decision!" />
+        <meta name="twitter:image" content="https://yourdomain.com/preview-image.jpg" />
+      </Helmet>
 
       {/* Hero Section */}
       <section className="py-20 px-4">
